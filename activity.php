@@ -598,7 +598,10 @@ $(document).ready(function(){
 						</div>
 						<div class="form-group">
 							<label>Bukti</label><br/>
-							<input type="button" class="btn btn-default" value="Upload" name="Upload">
+							<form action="upload.php" method="post" enctype="multipart/form-data">
+    						<input type="file" name="fileToUpload" id="fileToUpload">
+    						<input type="submit" value="Upload Image" name="submit">
+							</form>
 						</div>
 					</div>
 					<div class="modal-footer">
