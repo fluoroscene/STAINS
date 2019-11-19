@@ -565,7 +565,7 @@ $(document).ready(function(){
 	<div id="addReportModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form action="add-activity.php" method="POST">
+				<form action="upload.php" method="POST" enctype="multipart/form-data">
 					<div class="modal-header">						
 						<h4 class="modal-title">Add Report</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -598,9 +598,8 @@ $(document).ready(function(){
 						</div>
 						<div class="form-group">
 							<label>Bukti</label><br/>
-							<form action="upload.php" method="post" enctype="multipart/form-data">
     						<input type="file" name="fileToUpload" id="fileToUpload">
-    						<input type="submit" value="Upload Image" name="submit">
+    						<input type="submit" value="Upload Image" name="upload">
 							</form>
 						</div>
 					</div>
