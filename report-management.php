@@ -228,7 +228,7 @@ $(document).ready(function(){
                     </div>
                     <div class="col-sm-6">
                         <a href="logoutadmin.php" class="btn btn-danger"><i class="material-icons">&#xE15C;</i> <span>Log out</span></a>
-						<a href="activity-management.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Report Section</span></a>
+						<a href="activity-management.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Activity Section</span></a>
                     </div>
                 </div>
             </div>
