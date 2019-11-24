@@ -301,7 +301,7 @@ $(document).ready(function(){
 					<div class="col-sm-6">
 						<a href="#addActivityModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Activity</span></a>
 						<a href="logoutmahasiswa.php" class="btn btn-danger"><i class="material-icons">&#xE15C;</i> <span>Log out</span></a>			
-						<a href="#addReportModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Report</span></a>			
+						<a href="report.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Report Section</span></a>	
 					</div>
                 </div>
             </div>
@@ -556,56 +556,6 @@ $(document).ready(function(){
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
 						<input type="submit" class="btn btn-success" value="Add" name="addActivity">
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- Add Modal HTML -->
-	<div id="addReportModal" class="modal fade">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form action="upload.php" method="POST" enctype="multipart/form-data">
-					<div class="modal-header">						
-						<h4 class="modal-title">Add Report</h4>
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label>Nama Kegiatan</label>
-							<input type="text" name="namakegiatan" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Tanggal Mulai</label>
-							<input type="date" name="tglmulai" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Tanggal Selesai</label>
-							<input type="date" name="tglselesai" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Jenis Acara</label>
-							<select name="jenis" class="form-control" required> 
-  							<option value="Hiburan">Hiburan</option>
-							<option value="Akademik">Akademik</option>
-							<option value="Training">Training</option>
-							<option value="Festival">Festival</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label>Deskripsi Kegiatan</label>
-							<textarea name="deskripsi" rows="5" class="form-control" required></textarea>
-						</div>
-						<div class="form-group">
-							<label>Bukti</label><br/>
-    						<input type="file" name="fileToUpload" id="fileToUpload">
-    						<input type="submit" value="Upload Image" name="upload">
-							</form>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" class="btn btn-success" value="Add" name="addReport">
 					</div>
 				</form>
 			</div>
